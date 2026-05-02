@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stemplownik.pl – Kreator pieczątek online</title>
-  <meta name="description" content="Wpisz NIP — automatycznie pobierzemy dane z GUS i zaprojektujemy pieczęć firmową. Odbiór w 15 minut w Warszawie lub wysyłka tego samego dnia." />
+  <meta name="description" content="Kreator pieczątek online — zaprojektuj własną pieczęć w kilka minut. Szablony, własny projekt lub NIP z GUS. Odbiór w 15 minut w Warszawie, wysyłka tego samego dnia. 15 lat doświadczenia." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -45,37 +45,45 @@
       <div class="hero__content">
         <div class="hero__badge">⚡ Odbiór w Warszawie nawet w 15 minut</div>
         <h1 class="hero__title">
-          Wpisz NIP —<br />
-          <span class="gradient-text">pieczęć firmowa</span><br />
-          gotowa w chwilę
+          Zaprojektuj pieczęć<br />
+          <span class="gradient-text">szybko i prosto</span><br />
+          — w kilka minut
         </h1>
         <p class="hero__desc">
-          Kreator automatycznie pobiera dane Twojej firmy z GUS i w kilka sekund projektuje gotową pieczęć. Zero przepisywania, zero błędów.
+          Własny projekt od zera, gotowy szablon do edycji lub pieczęć firmowa prosto z GUS po wpisaniu NIP-u. Trzy drogi — jeden cel: pieczęć gotowa do zamówienia w minuty.
         </p>
 
-        <!-- NIP Input CTA -->
-        <div class="hero__nip-box">
-          <div class="nip-box__label">Wypróbuj teraz — wpisz NIP swojej firmy:</div>
-          <div class="nip-box__row">
-            <input
-              type="text"
-              class="nip-box__input"
-              placeholder="np. 5252344078"
-              maxlength="10"
-              id="nipInput"
-              oninput="this.value = this.value.replace(/\D/g,'')"
-            />
-            <a href="https://stemplownik.pl" target="_blank" class="btn btn--primary nip-box__btn" id="nipBtn">
-              <span class="nip-box__btn-icon">🔍</span> Pobierz z GUS
-            </a>
-          </div>
-          <div class="nip-box__hint">lub <a href="https://stemplownik.pl" target="_blank">wybierz szablon</a> i dostosuj ręcznie</div>
+        <!-- 3 ścieżki -->
+        <div class="hero__paths">
+          <a href="https://stemplownik.pl" target="_blank" class="hero-path hero-path--active">
+            <span class="hero-path__icon">🔍</span>
+            <div>
+              <div class="hero-path__title">Wpisz NIP</div>
+              <div class="hero-path__sub">dane z GUS → gotowy projekt</div>
+            </div>
+            <span class="hero-path__badge">Najszybciej</span>
+          </a>
+          <a href="https://stemplownik.pl" target="_blank" class="hero-path">
+            <span class="hero-path__icon">📋</span>
+            <div>
+              <div class="hero-path__title">Gotowe szablony</div>
+              <div class="hero-path__sub">wybierz i dostosuj tekst</div>
+            </div>
+          </a>
+          <a href="https://stemplownik.pl" target="_blank" class="hero-path">
+            <span class="hero-path__icon">✏️</span>
+            <div>
+              <div class="hero-path__title">Własny projekt</div>
+              <div class="hero-path__sub">zaprojektuj od zera</div>
+            </div>
+          </a>
         </div>
 
         <div class="hero__trust">
           <div class="trust-item"><span class="trust-icon">✓</span> Bez rejestracji</div>
-          <div class="trust-item"><span class="trust-icon">✓</span> Podgląd w skali 1:1</div>
+          <div class="trust-item"><span class="trust-icon">✓</span> Wydruk próbny w skali 1:1</div>
           <div class="trust-item"><span class="trust-icon">✓</span> Faktura VAT</div>
+          <div class="trust-item"><span class="trust-icon">✓</span> 15 lat doświadczenia</div>
         </div>
       </div>
 
@@ -109,7 +117,7 @@
         <div class="floating-card floating-card--1">
           <span class="fc-icon">⚡</span>
           <div>
-            <div class="fc-title">Odbiór Ochota / Wawer</div>
+            <div class="fc-title">Odbiór — Ochota</div>
             <div class="fc-sub">nawet w 15 minut</div>
           </div>
         </div>
@@ -133,20 +141,20 @@
   <section class="stats">
     <div class="container stats__grid">
       <div class="stat-item">
-        <div class="stat-value">~50</div>
-        <div class="stat-label">gotowych szablonów</div>
+        <div class="stat-value">15 lat</div>
+        <div class="stat-label">doświadczenia w produkcji pieczątek</div>
       </div>
       <div class="stat-item">
         <div class="stat-value">15 min</div>
-        <div class="stat-label">odbiór osobisty w Warszawie</div>
+        <div class="stat-label">odbiór osobisty — Ochota</div>
       </div>
       <div class="stat-item">
         <div class="stat-value">do 15:00</div>
         <div class="stat-label">zamów — wysyłamy dziś</div>
       </div>
       <div class="stat-item">
-        <div class="stat-value">GUS</div>
-        <div class="stat-label">dane firmy pobierane automatycznie</div>
+        <div class="stat-value">~50</div>
+        <div class="stat-label">gotowych szablonów w kreatorze</div>
       </div>
     </div>
   </section>
@@ -156,32 +164,32 @@
     <div class="container">
       <div class="section-header">
         <div class="section-badge">Prosty proces</div>
-        <h2 class="section-title">Od NIP-u do pieczęci w 3 krokach</h2>
-        <p class="section-desc">Kreator prowadzi Cię za rękę — bez wiedzy graficznej, bez instalowania czegokolwiek</p>
+        <h2 class="section-title">Od pomysłu do gotowej pieczęci</h2>
+        <p class="section-desc">Kreator prowadzi Cię krok po kroku — bez wiedzy graficznej, bez instalowania czegokolwiek. Znający aplikację zamawią pieczęć w minutę.</p>
       </div>
       <div class="steps">
         <div class="step">
           <div class="step__number">01</div>
-          <div class="step__icon">🔍</div>
-          <h3 class="step__title">Wpisz NIP</h3>
-          <p class="step__desc">Podaj numer NIP — kreator automatycznie pobierze pełne dane firmy z bazy GUS (nazwa, adres, NIP, REGON) i od razu zaprojektuje pieczęć.</p>
-          <div class="step__alt">Wolisz inaczej? Wybierz jeden z <strong>gotowych szablonów</strong> lub zacznij <strong>własny projekt od zera</strong>.</div>
+          <div class="step__icon">🎯</div>
+          <h3 class="step__title">Wybierz ścieżkę</h3>
+          <p class="step__desc">Trzy sposoby na start: wpisz <strong>NIP</strong> — kreator pobierze dane z GUS i od razu zaprojektuje pieczęć; wybierz <strong>gotowy szablon</strong> i dostosuj tekst; lub zacznij <strong>własny projekt</strong> od zera.</p>
+          <div class="step__alt">Każda ścieżka prowadzi do tego samego efektu — szybko i bez komplikacji.</div>
         </div>
         <div class="step__arrow">→</div>
         <div class="step">
           <div class="step__number">02</div>
           <div class="step__icon">🖊️</div>
           <h3 class="step__title">Dopracuj projekt</h3>
-          <p class="step__desc">Edytuj tekst, dobierz czcionkę, dodaj ramkę. Użyj przycisku <strong>"Dopasuj i wyśrodkuj"</strong> — jednym kliknięciem kreator idealnie rozmieści wszystko na pieczęci.</p>
-          <div class="step__alt">Podgląd w skali 100% — widzisz dokładnie jak będzie wyglądać gotowa pieczęć.</div>
+          <p class="step__desc">Edytuj tekst, dobierz czcionkę, dodaj ramkę. Użyj <strong>"Dopasuj i wyśrodkuj"</strong> — jednym kliknięciem kreator idealnie rozmieszcza wszystkie elementy na pieczęci.</p>
+          <div class="step__alt">Wydrukuj zamówienie w skali 1:1, żeby sprawdzić rzeczywisty rozmiar przed odbiorem.</div>
         </div>
         <div class="step__arrow">→</div>
         <div class="step">
           <div class="step__number">03</div>
           <div class="step__icon">📦</div>
           <h3 class="step__title">Zamów i odbierz</h3>
-          <p class="step__desc">Wybierz model pieczęci, kolor tuszu i sposób odbioru. Płatność po zamówieniu — skontaktujemy się w celu potwierdzenia.</p>
-          <div class="step__alt">Odbiór osobisty w Warszawie (Ochota lub Wawer) lub wysyłka kurierem/pocztą.</div>
+          <p class="step__desc">Wybierz model automatu (Wagraf, Trodat, Colop i inne) i sposób odbioru. Płatność po zamówieniu — skontaktujemy się w celu potwierdzenia.</p>
+          <div class="step__alt">Odbiór osobisty w Warszawie (Ochota lub Falęnica) lub wysyłka kurierem/pocztą.</div>
         </div>
       </div>
     </div>
@@ -192,47 +200,47 @@
     <div class="container">
       <div class="section-header">
         <div class="section-badge">Co wyróżnia Stemplownik</div>
-        <h2 class="section-title">Kreator, który naprawdę myśli za Ciebie</h2>
-        <p class="section-desc">Nie przepisujesz danych, nie układasz ręcznie tekstu — kreator robi to za Ciebie</p>
+        <h2 class="section-title">15 lat pieczątek — teraz w kreatorze online</h2>
+        <p class="section-desc">Za stemplownikiem stoi firma z 15-letnim doświadczeniem i kilkudziesięcioma pieczątkami miesięcznie. Kreator to nowe narzędzie z tym samym rzemiosłem za plecami.</p>
       </div>
       <div class="features-grid">
 
         <div class="feature feature--large">
           <div class="feature__icon">🏛️</div>
           <h3 class="feature__title">Integracja z GUS</h3>
-          <p class="feature__desc">Wpisz NIP — kreator w kilka sekund pobiera pełne dane firmy z rejestru GUS i automatycznie wypełnia nimi projekt pieczątki. Koniec z przepisywaniem i literówkami w nazwie firmy czy adresie.</p>
+          <p class="feature__desc">Wpisz NIP — kreator w kilka sekund pobiera pełne dane firmy z rejestru GUS i automatycznie układa gotowy projekt pieczątki. Koniec z przepisywaniem nazwy firmy czy adresu i ryzykiem literówek.</p>
           <div class="feature__tag">Tylko u nas</div>
         </div>
 
         <div class="feature feature--large">
           <div class="feature__icon">⊹</div>
           <h3 class="feature__title">Dopasuj i wyśrodkuj</h3>
-          <p class="feature__desc">Jeden przycisk — i kreator automatycznie rozmieszcza wszystkie elementy pieczęci idealnie wyśrodkowane i dopasowane do rozmiaru. Żadnego ręcznego ustawiania milimetr po milimetrze.</p>
+          <p class="feature__desc">Jeden przycisk — kreator automatycznie rozmieszcza wszystkie elementy idealnie wyśrodkowane i dopasowane do wybranego rozmiaru. Żadnego ręcznego ustawiania piksel po pikselu.</p>
           <div class="feature__tag">Smart layout</div>
-        </div>
-
-        <div class="feature">
-          <div class="feature__icon">📐</div>
-          <h3 class="feature__title">Podgląd w skali 1:1</h3>
-          <p class="feature__desc">Kreator pokazuje pieczęć w rzeczywistym rozmiarze — wiesz dokładnie jak będzie wyglądać zanim złożysz zamówienie.</p>
-        </div>
-
-        <div class="feature">
-          <div class="feature__icon">🎨</div>
-          <h3 class="feature__title">4 kolory tuszu</h3>
-          <p class="feature__desc">Czarny, czerwony, niebieski lub zielony — wybierz kolor tuszu dopasowany do potrzeb Twojej firmy lub specjalizacji.</p>
-        </div>
-
-        <div class="feature">
-          <div class="feature__icon">📋</div>
-          <h3 class="feature__title">~50 gotowych szablonów</h3>
-          <p class="feature__desc">Firmowe, imienne, medyczne, dokumentacyjne — gotowe układy, które wystarczy uzupełnić własnym tekstem.</p>
         </div>
 
         <div class="feature">
           <div class="feature__icon">🖨️</div>
           <h3 class="feature__title">Wydruk próbny 1:1</h3>
-          <p class="feature__desc">Zamówienie możesz wydrukować w skali 100% — przykładasz do pieczęci i sprawdzasz, czy rozmiar na pewno Ci odpowiada.</p>
+          <p class="feature__desc">Wydrukuj zamówienie w skali 1:1 i przyłóż do kartki — sprawdzasz rzeczywisty rozmiar pieczęci zanim ją odbierzesz. Pewność bez niespodzianek.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__icon">🏷️</div>
+          <h3 class="feature__title">Szeroki wybór automatów</h3>
+          <p class="feature__desc">Wagraf, Trodat, Colop i inne sprawdzone marki — w różnych rozmiarach i konfiguracjach. Kreator dobiera pasujące modele automatycznie na podstawie projektu.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__icon">📋</div>
+          <h3 class="feature__title">~50 gotowych szablonów</h3>
+          <p class="feature__desc">Firmowe, imienne, medyczne, dokumentacyjne — starannie przygotowane układy, które wystarczy uzupełnić własnymi danymi.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature__icon">⚙️</div>
+          <h3 class="feature__title">Warstwy i precyzja</h3>
+          <p class="feature__desc">Pełna kontrola nad każdym elementem — tekst, ramki, warstwy. Kreator działa jak uproszczony edytor graficzny, ale bez krzywej uczenia się.</p>
         </div>
 
       </div>
@@ -346,53 +354,50 @@
     <div class="container">
       <div class="section-header">
         <div class="section-badge">Modele pieczątek</div>
-        <h2 class="section-title">Wybierz model</h2>
-        <p class="section-desc">Kreator dobiera odpowiedni model na podstawie rozmiaru projektu. Możesz też wybrać samodzielnie.</p>
+        <h2 class="section-title">Sprawdzone marki, szeroki wybór</h2>
+        <p class="section-desc">Kreator automatycznie dobiera pasujące modele na podstawie rozmiaru projektu. Możesz też wybrać samodzielnie spośród dostępnych automatów.</p>
       </div>
       <div class="products-grid">
 
         <div class="product-card product-card--featured">
-          <div class="product-card__badge">Polecany</div>
+          <div class="product-card__badge">Popularne</div>
           <div class="product-card__icon">🖊️</div>
-          <h3 class="product-card__name">Trodat 4912</h3>
-          <div class="product-card__size">47 × 18 mm</div>
-          <p class="product-card__desc">Profesjonalna pieczęć samotuszująca renomowanej marki Trodat. Trwała, precyzyjna, idealna do codziennego użytku w biurze.</p>
-          <div class="product-card__price">83 zł</div>
-          <div class="product-card__ink">
-            <div class="ink-dot ink-dot--black"></div>
-            <div class="ink-dot ink-dot--red"></div>
-            <div class="ink-dot ink-dot--blue ink-dot--active"></div>
-            <div class="ink-dot ink-dot--green"></div>
-            <span class="ink-label">4 kolory tuszu</span>
-          </div>
+          <h3 class="product-card__name">Trodat</h3>
+          <div class="product-card__size">Renomowana marka austriacka</div>
+          <p class="product-card__desc">Profesjonalne pieczęcie samotuszujące znane z precyzji i trwałości. Szeroka gama modeli w różnych rozmiarach — od kompaktowych po duże formaty biurowe.</p>
+          <div class="product-card__price">od 83 zł</div>
         </div>
 
         <div class="product-card">
           <div class="product-card__icon">🖊️</div>
-          <h3 class="product-card__name">Wagraf b3s</h3>
-          <div class="product-card__size">48 × 19 mm</div>
-          <p class="product-card__desc">Solidna pieczęć samotuszująca w przystępnej cenie. Sprawdzona alternatywa dla wymagających użytkowników.</p>
-          <div class="product-card__price">70 zł</div>
-          <div class="product-card__ink">
-            <div class="ink-dot ink-dot--black"></div>
-            <div class="ink-dot ink-dot--red"></div>
-            <div class="ink-dot ink-dot--blue"></div>
-            <div class="ink-dot ink-dot--green"></div>
-            <span class="ink-label">4 kolory tuszu</span>
-          </div>
+          <h3 class="product-card__name">Wagraf</h3>
+          <div class="product-card__size">Solidna polska marka</div>
+          <p class="product-card__desc">Sprawdzone automaty samotuszujące w przystępnej cenie. Popularne rozwiązanie dla firm i instytucji szukających niezawodności w dobrej cenie.</p>
+          <div class="product-card__price">od 70 zł</div>
         </div>
 
         <div class="product-card">
-          <div class="product-card__icon">🔲</div>
-          <h3 class="product-card__name">Guma do pieczątki</h3>
-          <div class="product-card__size">Pasuje do każdego rozmiaru</div>
-          <p class="product-card__desc">Sama guma — idealna jako wymiana lub gdy masz już własną oprawkę. Najniższy koszt wejścia.</p>
-          <div class="product-card__price">25 zł</div>
-          <div class="product-card__ink">
-            <span class="ink-label">Bez tuszu — do oprawki</span>
-          </div>
+          <div class="product-card__icon">🖊️</div>
+          <h3 class="product-card__name">Colop i inne</h3>
+          <div class="product-card__size">Pełna oferta w kreatorze</div>
+          <p class="product-card__desc">Automaty marki Colop i inne modele dostępne w zależności od projektu. Kreator pokazuje modele pasujące do wybranego rozmiaru pieczęci.</p>
+          <div class="product-card__price">wycena w kreatorze</div>
         </div>
 
+      </div>
+      <div class="products-extra">
+        <div class="products-extra__item">
+          <span class="products-extra__icon">🔲</span>
+          <div>
+            <strong>Sama guma do pieczątki</strong> — od 25 zł. Idealna jako wymiana lub gdy masz już własną oprawkę. Pasuje do każdego rozmiaru.
+          </div>
+        </div>
+        <div class="products-extra__item">
+          <span class="products-extra__icon">💬</span>
+          <div>
+            <strong>Pieczątki z logo lub okrągłe?</strong> Realizujemy je poza kreatorem — napisz do nas, wycenimy indywidualnie.
+          </div>
+        </div>
       </div>
 
       <!-- Rozmiary -->
@@ -422,23 +427,23 @@
           <div class="delivery-card__icon">⚡</div>
           <h3 class="delivery-card__title">Osobiście — Ochota</h3>
           <div class="delivery-card__time">nawet 15 minut*</div>
-          <p class="delivery-card__desc">Zamów przez kreator, przyjedź do punktu na Ochocie — pieczęć może być gotowa jeszcze zanim dotrzesz, jeśli maszyna jest wolna.</p>
+          <p class="delivery-card__desc">Laser grawerujący stoi na Ochocie — zamów przez kreator, przyjedź, a pieczęć może być gotowa jeszcze zanim dotrzesz.</p>
           <div class="delivery-card__note">*zależy od dostępności maszyny</div>
         </div>
 
         <div class="delivery-card delivery-card--highlight">
-          <div class="delivery-card__icon">⚡</div>
-          <h3 class="delivery-card__title">Osobiście — Wawer</h3>
-          <div class="delivery-card__time">nawet 15 minut*</div>
-          <p class="delivery-card__desc">Drugi punkt w Warszawie — Wawer. Wygodny odbiór bez czekania, w dogodnej lokalizacji po prawej stronie Wisły.</p>
-          <div class="delivery-card__note">*zależy od dostępności maszyny</div>
+          <div class="delivery-card__icon">🚗</div>
+          <h3 class="delivery-card__title">Doręczenie — Falęnica</h3>
+          <div class="delivery-card__time">gotowa po 15:00*</div>
+          <p class="delivery-card__desc">Zamów do 15:00 — nasz handlowiec przejeżdża wtedy z Ochoty do Falenicy i przywozi gotową pieczęć. Wygodnie, bez wychodzenia z domu czy biura.</p>
+          <div class="delivery-card__note">*przy zamówieniu złożonym do 15:00</div>
         </div>
 
         <div class="delivery-card">
           <div class="delivery-card__icon">🚚</div>
           <h3 class="delivery-card__title">Wysyłka — Kurier / Poczta</h3>
-          <div class="delivery-card__time">Zamów do 15:00 → wysyłamy dziś</div>
-          <p class="delivery-card__desc">Zamówienia złożone przed 15:00 wysyłamy tego samego dnia. Kurier lub Poczta Polska — wybierasz co wolisz.</p>
+          <div class="delivery-card__time">zamów do 15:00 → wysyłamy dziś</div>
+          <p class="delivery-card__desc">Zamówienia złożone przed 15:00 wysyłamy tego samego dnia. Kurier lub Poczta Polska — do całej Polski.</p>
           <div class="delivery-card__note">Dostawa w całej Polsce</div>
         </div>
 
@@ -450,21 +455,20 @@
   <section class="cta-section">
     <div class="container cta-section__inner">
       <div class="cta-section__content">
-        <h2 class="cta-section__title">Gotowy? Wpisz NIP i zacznij.</h2>
+        <h2 class="cta-section__title">Zacznij projektować — bezpłatnie</h2>
         <p class="cta-section__desc">
-          Kreator jest bezpłatny — zaprojektuj pieczęć i sprawdź jak wygląda zanim cokolwiek zapłacisz.<br/>
-          Płatność tylko po złożeniu zamówienia.
+          Kreator jest bezpłatny — zaprojektuj pieczęć i sprawdź jak wygląda zanim cokolwiek zapłacisz. Płatność tylko po złożeniu zamówienia.
         </p>
-        <div class="cta-nip-box">
-          <input type="text" class="cta-nip-input" placeholder="Wpisz NIP (10 cyfr)" maxlength="10" oninput="this.value = this.value.replace(/\D/g,'')"/>
-          <a href="https://stemplownik.pl" target="_blank" class="btn btn--white btn--lg">
-            🔍 Pobierz z GUS →
+        <div class="cta-paths">
+          <a href="https://stemplownik.pl" target="_blank" class="cta-path">
+            <span>🔍</span><span>Wpisz NIP</span>
           </a>
-        </div>
-        <div class="cta-section__alts">
-          lub <a href="https://stemplownik.pl" target="_blank">przeglądaj szablony</a>
-          &nbsp;·&nbsp;
-          <a href="https://stemplownik.pl" target="_blank">zacznij własny projekt</a>
+          <a href="https://stemplownik.pl" target="_blank" class="cta-path">
+            <span>📋</span><span>Gotowe szablony</span>
+          </a>
+          <a href="https://stemplownik.pl" target="_blank" class="cta-path">
+            <span>✏️</span><span>Własny projekt</span>
+          </a>
         </div>
       </div>
     </div>
@@ -484,7 +488,7 @@
             <span class="contact-item__icon">📍</span>
             <div>
               <div class="contact-item__label">Punkty odbioru</div>
-              <div class="contact-item__value">Warszawa — Ochota i Wawer</div>
+              <div class="contact-item__value">Warszawa — Ochota i Falęnica</div>
             </div>
           </div>
           <div class="contact-item">
